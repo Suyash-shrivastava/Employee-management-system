@@ -1,0 +1,14 @@
+<html>
+<center>
+    <form action="/employee/editimage" method="post" enctype="multipart/form-data">
+    <input type="hidden" value="<%=data.empid%>" name="empid">
+
+        <h3><%=data.empname%></h3>
+    <img src="/images/<%=data.picture%>" width="250"> <br><br>
+    <b>Upload New Image:</b><br><br>
+    <input type="file" required  name="pic"><br><br>
+    <input type="submit" value="Upload New Image">
+    </form>
+</center>
+
+</html>
